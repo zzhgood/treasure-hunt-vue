@@ -1,14 +1,11 @@
 # 依赖目录
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# 构建输出目录
+# 构建输出
 dist/
 build/
 
-# 本地环境变量
+# 环境变量
 .env
 .env.local
 .env.*.local
@@ -17,57 +14,20 @@ build/
 *.log
 logs/
 
-# 编辑器目录和文件
+# 编辑器文件
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
 
-# 操作系统生成的文件
+# 系统文件
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
-# 测试覆盖目录
-coverage/
-.nyc_output/
-
-# 缓存目录
+# 缓存文件
 .cache/
 .temp/
 
-# 包锁文件（根据你使用的包管理器选择）
-package-lock.json   
-# yarn.lock          # 如果你使用 yarn
-# pnpm-lock.yaml     # 如果你使用 pnpm
-
-# 本地服务器配置
-.local
-
-# 部署文件
-.gh-pages/
-
-# Vue CLI 生成的文件
-.vuepress/dist
-
-# 临时文件
-*.tmp
-*.temp
-
-# 本地数据库文件（如果有的话）
-*.sqlite
-*.db
-
-# 音频缓存文件（如果有的话）
-public/music/*.mp3.tmp
-
-# Git 相关
-.git/
-
-# 生产环境构建的源映射文件
-*.map
+# 包锁文件应该被提交，所以不要忽略它们
+# package-lock.json   # 删除或注释掉这行
+# yarn.lock          # 删除或注释掉这行

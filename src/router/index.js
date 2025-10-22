@@ -1,5 +1,4 @@
-// router/index.js
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import GameHome from '../views/GameHome.vue'
 import UserCenter from '../views/UserCenter.vue'
 import RankingPage from '../views/RankingPage.vue'
@@ -22,8 +21,9 @@ const routes = [
   }
 ]
 
+// 关键修改：使用 Hash 模式而不是 History 模式
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), // 改为 Hash 模式
   routes
 })
 
